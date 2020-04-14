@@ -1,0 +1,63 @@
+.header-container {
+  height: 80vh;
+  width: 90%;
+  margin: 3rem auto 0rem;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url("../../img/header.webp");
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../../img/header.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 2px;
+  color: rgba(255, 255, 255, 0.95);
+  letter-spacing: 0.6px;
+}
+
+.header-container h1 {
+  text-align: center;
+  font-size: 4.5rem;
+  text-transform: capitalize;
+  text-shadow: -1px -1px 0 #000,   1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.header-container h4 {
+  word-spacing: 0.3rem;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  text-shadow: -1px -1px 0 #000,   1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.header-container span {
+  margin-top: 2rem;
+  width: 100px;
+  height: 5px;
+  background-color: #F8F8FF;
+  border-radius: 50px;
+  border: 1.2px solid black;
+}
+
+.header-container::after {
+  content: '';
+  width: 0;
+  height: 0;
+  position: absolute;
+  bottom: 0px;
+  right: 00px;
+  border-bottom: 140px solid #F8F8FF;
+  border-left: 90vw solid transparent;
+  color: white;
+}
+/*# sourceMappingURL=Header.css.map */

@@ -1,0 +1,123 @@
+.knowledge-container {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url("../../img/knowledge.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../../img/knowledge.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 90%;
+  height: 90vh;
+  min-height: 900px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  border-radius: 2px;
+}
+
+.knowledge-container .card {
+  padding: 20px 15px;
+  margin: 0px 30px;
+  height: 250px;
+  min-width: 200px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 5px;
+  -webkit-transition: -webkit-transform 0.3s ease-out, -webkit-box-shadow 0.3s ease-out;
+  transition: -webkit-transform 0.3s ease-out, -webkit-box-shadow 0.3s ease-out;
+  transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
+  transition: transform 0.3s ease-out, box-shadow 0.3s ease-out, -webkit-transform 0.3s ease-out, -webkit-box-shadow 0.3s ease-out;
+}
+
+.knowledge-container .card img {
+  width: 4rem;
+  height: 4rem;
+}
+
+.knowledge-container .card h5 {
+  padding: 0.5rem 0;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.knowledge-container .card h6 {
+  font-size: 1rem;
+  font-weight: 450;
+  padding: 0.1rem 0;
+}
+
+.knowledge-container .card:hover {
+  -webkit-transform: translateY(-35px);
+          transform: translateY(-35px);
+  -webkit-box-shadow: 0px 0px 92px -10px rgba(0, 0, 0, 0.75);
+          box-shadow: 0px 0px 92px -10px rgba(0, 0, 0, 0.75);
+}
+
+.knowledge-container::after {
+  content: 'hello';
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  border-bottom: 140px solid #F8F8FF;
+  border-left: 90vw solid transparent;
+  color: white;
+}
+
+.knowledge-container::before {
+  content: '';
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  border-top: 140px solid #F8F8FF;
+  border-right: 90vw solid transparent;
+  color: white;
+}
+
+@media screen and (max-width: 920px) {
+  .knowledge-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .knowledge-container .card {
+    padding: 20px 15px;
+    margin: 10px;
+    height: auto;
+    text-align: center;
+    -webkit-transition: -webkit-transform 0.3s ease-out, -webkit-box-shadow 0.3s ease-out;
+    transition: -webkit-transform 0.3s ease-out, -webkit-box-shadow 0.3s ease-out;
+    transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
+    transition: transform 0.3s ease-out, box-shadow 0.3s ease-out, -webkit-transform 0.3s ease-out, -webkit-box-shadow 0.3s ease-out;
+  }
+  .knowledge-container .card img {
+    width: 3.8rem;
+    height: 3.8rem;
+  }
+  .knowledge-container .card h5 {
+    padding: 0.5rem 0;
+    font-size: 1.3rem;
+  }
+  .knowledge-container .card h6 {
+    font-size: 0.9rem;
+    padding: 0.1rem 0;
+  }
+  .knowledge-container .card:hover {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    -webkit-box-shadow: 0px 0px 92px -10px rgba(0, 0, 0, 0.75);
+            box-shadow: 0px 0px 92px -10px rgba(0, 0, 0, 0.75);
+  }
+}
+/*# sourceMappingURL=Knowledge.css.map */

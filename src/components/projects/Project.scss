@@ -1,0 +1,167 @@
+.projects-title {
+    font-size: 2.2rem;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 8rem;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.8);
+    letter-spacing: 0.05rem;
+    word-spacing: 0.8rem;
+}
+.projects {
+    width: 65%;
+    margin: 0 auto 100px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    column-gap: 9rem;
+    row-gap: 5rem;
+    .project-card {
+        margin: 0 auto;
+        position: relative;
+        width: 320px;
+        height: 300px;
+        transition: all 0.4s ease-out;
+        .front {
+            .gif {
+                width: 65px;
+                height: 65px;
+                z-index: 1;
+        
+                position: absolute;
+                top: 55px;
+                left: 10px;
+            }
+            .title {
+                padding: 8px;
+                color: white;
+                text-align: end;
+                span {
+                    background-color: rgba(0, 0, 0, 0.8);
+                    padding: 2px;
+                }
+            }
+            h6 {
+                text-align: center;
+                font-size: 1.1rem;
+                margin-top: 5px;
+            }
+            transform: perspective(600px) rotateY(0deg);
+        }
+        .back {
+            position: absolute;
+            top: 0;
+            left: 0;
+            transform: translate(-50%, -50%);
+            transform: perspective(600px) rotateY(180deg);
+
+            .demo {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+        
+                font-size: 2rem;
+                font-weight: 500;
+                color: rgba(0, 0, 0, 0.8);
+                padding: 10px 20px;
+                border-radius: 50px;
+                background: white;
+                border: 0;
+                outline: none;
+                transition: all 0.2s ease-out;
+
+                &:hover {
+                    color: white;
+                    background: rgba(0, 0, 0, 0.8);
+                }
+            }
+            
+            
+        }
+        .front, .back {
+            height: 100%;
+            width: 100%;
+            backface-visibility: hidden;
+            transition: transform 0.5s linear;
+            box-shadow: -11px 11px 21px -1px rgba(0,0,0,0.75);
+        }
+        &:hover > .front {
+            transform: perspective(600px) rotateY(-180deg);
+        } 
+        &:hover > .back {
+            transform: perspective(600px) rotateY(0deg);
+        } 
+    }
+}
+
+.modal {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: auto;
+    .close-modal {
+        position: absolute;
+        right: -20px;
+        top: -30px;
+
+        padding: 10px 15px;
+        border: 0;
+        font-weight: 600;
+        text-transform: uppercase;
+        background-color: rgb(231, 34, 73);
+        color: white;
+        border-bottom-left-radius: 10px;
+        border: 2px solid rgb(231, 34, 73);
+        transition: all 0.3s linear;
+
+        &:hover {
+            color: rgba(231, 34, 73, 1);
+            background-color: whitesmoke;
+        }
+    }
+    .demo-img {
+        margin: auto 0;
+        max-height: 700px;
+        max-width: 1000px;
+        img {
+            width: 100%;
+        }
+    }
+    .demo-utils {
+        margin: 25px auto;
+        text-align: center;
+        h3 {
+            font-size: 2rem;
+            margin-bottom: 15px;
+        }
+        button {
+            outline: none;
+            padding: 15px 30px;
+            font-size: 1.1rem;
+            border-radius: 50px;
+            background-color: #191970;
+            border: 2px solid #191970;
+            font-weight: 600;
+            color: white;
+            transition: all 0.3s linear;
+            &:hover {
+                background-color: white;
+                color: #191970;
+                // transform: scale(1.03);
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1100px) {
+    .modal {
+        flex-direction: row;
+        .demo-img {
+            width: 70%;
+        }
+        .demo-utils {
+            margin: 250px auto;
+        }
+    }
+}

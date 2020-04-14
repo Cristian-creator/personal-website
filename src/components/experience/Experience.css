@@ -1,0 +1,109 @@
+.experience-container {
+  width: 66%;
+  margin: 0px auto 0rem;
+}
+
+.experience-container .title {
+  margin: 0 auto 8rem;
+}
+
+.experience-container .title h1 {
+  text-align: center;
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.8);
+  text-align: center;
+  letter-spacing: 0.15rem;
+  word-spacing: 0.3rem;
+}
+
+.experience-container .experience-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.experience-container .experience-flex .experience-description {
+  max-width: 450px;
+}
+
+.experience-container .experience-flex .experience-description h3 {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.7);
+  margin-bottom: 1rem;
+}
+
+.experience-container .experience-flex .experience-description p {
+  letter-spacing: 0.6px;
+  font-size: 1.15rem;
+  color: rgba(0, 0, 0, 0.7);
+  margin-bottom: 1.8rem;
+}
+
+.experience-container .experience-flex .icons img {
+  width: 140px;
+  height: 140px;
+  padding: 5px;
+  margin: 0 1.8rem;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+.experience-container .experience-flex .icons img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-box-shadow: 1px 1px 2px #750f6b, 0 0 25px #750f6b, 0 0 5px #750f6b;
+          box-shadow: 1px 1px 2px #750f6b, 0 0 25px #750f6b, 0 0 5px #750f6b;
+}
+
+@media screen and (max-width: 1650px) {
+  .experience-container {
+    width: 78%;
+  }
+}
+
+@media screen and (max-width: 1420px) {
+  .experience-container {
+    width: 85%;
+  }
+  .icons img {
+    width: 130px;
+    height: 130px;
+  }
+}
+
+@media screen and (max-width: 1275px) {
+  .experience-flex {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
+  .icons img {
+    margin: 0 1.2rem !important;
+  }
+}
+
+@media screen and (max-width: 678px) {
+  .icons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+/*# sourceMappingURL=Experience.css.map */

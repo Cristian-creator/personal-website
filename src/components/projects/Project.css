@@ -1,0 +1,206 @@
+.projects-title {
+  font-size: 2.2rem;
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 8rem;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.8);
+  letter-spacing: 0.05rem;
+  word-spacing: 0.8rem;
+}
+
+.projects {
+  width: 65%;
+  margin: 0 auto 100px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(220px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  -webkit-column-gap: 9rem;
+          column-gap: 9rem;
+  row-gap: 5rem;
+}
+
+.projects .project-card {
+  margin: 0 auto;
+  position: relative;
+  width: 320px;
+  height: 300px;
+  -webkit-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
+}
+
+.projects .project-card .front {
+  -webkit-transform: perspective(600px) rotateY(0deg);
+          transform: perspective(600px) rotateY(0deg);
+}
+
+.projects .project-card .front .gif {
+  width: 65px;
+  height: 65px;
+  z-index: 1;
+  position: absolute;
+  top: 55px;
+  left: 10px;
+}
+
+.projects .project-card .front .title {
+  padding: 8px;
+  color: white;
+  text-align: end;
+}
+
+.projects .project-card .front .title span {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 2px;
+}
+
+.projects .project-card .front h6 {
+  text-align: center;
+  font-size: 1.1rem;
+  margin-top: 5px;
+}
+
+.projects .project-card .back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transform: perspective(600px) rotateY(180deg);
+          transform: perspective(600px) rotateY(180deg);
+}
+
+.projects .project-card .back .demo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 2rem;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.8);
+  padding: 10px 20px;
+  border-radius: 50px;
+  background: white;
+  border: 0;
+  outline: none;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+.projects .project-card .back .demo:hover {
+  color: white;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.projects .project-card .front, .projects .project-card .back {
+  height: 100%;
+  width: 100%;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transition: -webkit-transform 0.5s linear;
+  transition: -webkit-transform 0.5s linear;
+  transition: transform 0.5s linear;
+  transition: transform 0.5s linear, -webkit-transform 0.5s linear;
+  -webkit-box-shadow: -11px 11px 21px -1px rgba(0, 0, 0, 0.75);
+          box-shadow: -11px 11px 21px -1px rgba(0, 0, 0, 0.75);
+}
+
+.projects .project-card:hover > .front {
+  -webkit-transform: perspective(600px) rotateY(-180deg);
+          transform: perspective(600px) rotateY(-180deg);
+}
+
+.projects .project-card:hover > .back {
+  -webkit-transform: perspective(600px) rotateY(0deg);
+          transform: perspective(600px) rotateY(0deg);
+}
+
+.modal {
+  margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  height: auto;
+}
+
+.modal .close-modal {
+  position: absolute;
+  right: -20px;
+  top: -30px;
+  padding: 10px 15px;
+  border: 0;
+  font-weight: 600;
+  text-transform: uppercase;
+  background-color: #e72249;
+  color: white;
+  border-bottom-left-radius: 10px;
+  border: 2px solid #e72249;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.modal .close-modal:hover {
+  color: #e72249;
+  background-color: whitesmoke;
+}
+
+.modal .demo-img {
+  margin: auto 0;
+  max-height: 700px;
+  max-width: 1000px;
+}
+
+.modal .demo-img img {
+  width: 100%;
+}
+
+.modal .demo-utils {
+  margin: 25px auto;
+  text-align: center;
+}
+
+.modal .demo-utils h3 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.modal .demo-utils button {
+  outline: none;
+  padding: 15px 30px;
+  font-size: 1.1rem;
+  border-radius: 50px;
+  background-color: #191970;
+  border: 2px solid #191970;
+  font-weight: 600;
+  color: white;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.modal .demo-utils button:hover {
+  background-color: white;
+  color: #191970;
+}
+
+@media screen and (min-width: 1100px) {
+  .modal {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .modal .demo-img {
+    width: 70%;
+  }
+  .modal .demo-utils {
+    margin: 250px auto;
+  }
+}
+/*# sourceMappingURL=Project.css.map */
