@@ -21,7 +21,7 @@ export default function Knowledge() {
         {
             title: 'database',
             icon: database,
-            technologies: ['MySQL', 'MongoDB']
+            technologies: ['MySQL', 'MongoDB', 'PostgreSQL']
         }
     ]
 

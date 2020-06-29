@@ -6,7 +6,7 @@ export default function Header() {
         <header className="header-container">
             {/* <i class="fab fa-cuttlefish"></i> */}
             <h1> cristian predusca </h1>
-            <h4> full stack engineer </h4>
+            <h4> software engineer </h4>
             <span></span>
         </header>
     )

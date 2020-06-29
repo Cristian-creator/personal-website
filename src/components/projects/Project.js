@@ -63,7 +63,7 @@ export default function Project({ project }) {
                             </div>
                             <div className="demo-utils">
                                 <h3> {title} </h3>
-                                <a href={sourceCode}><button> Source Code </button> </a>
+                                <a href={sourceCode} target="_blank"><button> Source Code </button> </a>
                             </div>
                          </div>
                     </Modal>
