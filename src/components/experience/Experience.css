@@ -93,6 +93,12 @@
   .icons img {
     margin: 0 1.2rem !important;
   }
+  .experience-container .experience-flex .icons img:hover {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
 }
 
 @media screen and (max-width: 678px) {

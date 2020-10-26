@@ -1,0 +1,36 @@
+.vert-modal {
+    width: 1900px;
+    .its-body {
+        display: flex;
+        .demo {
+            img {
+                max-width: 730px;
+            }
+        }
+        .info {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            h1 {
+                font-size: 2rem;
+            }
+            a {
+                button {
+                    padding: 10px 20px;
+                    border-radius: 5px;
+                    background: transparent;
+                    color: #4a148c;
+                    border: 1px solid #4a148c;
+                    transition: all 0.3s linear;
+                    // background-color: linear-gradient(143deg, rgba(2,0,36,1) 0%, rgba(167,19,207,1) 0%, rgba(21,22,22,1) 0%, rgba(108,13,46,1) 0%, rgba(2,131,255,1) 0%, rgba(121,0,116,1) 0%, rgba(56,16,49,1) 100%, rgba(255,255,0,1) 100%, rgba(162,117,18,1) 100%);
+                    &:hover {
+                        background: #4a148c;
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+}

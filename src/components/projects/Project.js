@@ -2,25 +2,7 @@ import React, { useState } from 'react'
 import Hero from './Hero';
 import './Project.css'
 import StyledBackCard from './StyledBackCard';
-import Modal from 'react-modal';
-
-
-const customStyles = {
-    content : {
-        top                   : '50%',
-        left                  : '50%',
-        // right                 : 'auto',
-        // bottom                : 'auto',
-        marginRight           : '-50%',
-        transform             : 'translate(-50%, -50%)',
-        maxWidth: '90%',
-        minHeight: '600px',
-        height: 'auto',
-        overflow: 'hidden'
-    }
-};
-
-// Modal.setAppElement('#yourAppElement');
+import VerticallyModal from './VerticallyModal';
 
 export default function Project({ project }) {
     const { title, used, heroImg, gif, backColor, demo, sourceCode } = project;
@@ -47,8 +29,8 @@ export default function Project({ project }) {
             </div>
             <StyledBackCard backColor={backColor} className="back">
                 <div className="back-content">
-                    <button className="demo" onClick={toggleModal}> Demo </button>
-                    <Modal
+                    <button className="demo" onClick={() => setOpen(true)}> Demo </button>
+                    {/* <Modal
                      isOpen={open} 
                      onRequestClose={toggleModal}
                      shouldCloseOnOverlayClick={true}
@@ -65,7 +47,8 @@ export default function Project({ project }) {
                                 <a href={sourceCode}><button> Source Code </button> </a>
                             </div>
                          </div>
-                    </Modal>
+                    </Modal> */}
+                   <VerticallyModal show={open} onHide={() => setOpen(false)} title={title} demo={demo} sourceCode={sourceCode} />
                 </div> 
             </StyledBackCard>
         </div>

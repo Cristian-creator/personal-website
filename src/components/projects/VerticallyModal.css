@@ -1,0 +1,50 @@
+.vert-modal {
+  width: 1900px;
+}
+
+.vert-modal .its-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.vert-modal .its-body .demo img {
+  max-width: 730px;
+}
+
+.vert-modal .its-body .info {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.vert-modal .its-body .info h1 {
+  font-size: 2rem;
+}
+
+.vert-modal .its-body .info a button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  background: transparent;
+  color: #4a148c;
+  border: 1px solid #4a148c;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.vert-modal .its-body .info a button:hover {
+  background: #4a148c;
+  color: white;
+}
+/*# sourceMappingURL=VerticallyModal.css.map */

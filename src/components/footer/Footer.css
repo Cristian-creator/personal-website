@@ -37,15 +37,15 @@
 }
 
 .footer h1 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   color: rgba(255, 255, 255, 0.7);
   font-weight: 500;
-  margin: 30px 0px 5px 0px;
+  margin: 90px 0px 5px 0px;
 }
 
 .footer span {
   width: 60px;
-  border-bottom: 4px solid rgba(255, 255, 255, 0.6);
+  border-bottom: 3px solid rgba(255, 255, 255, 0.6);
   border-radius: 10px;
   margin-bottom: 30px;
 }
@@ -53,7 +53,7 @@
 .footer .icons a {
   text-decoration: none;
   color: rgba(255, 255, 255, 0.7);
-  font-size: 3.3rem;
+  font-size: 3rem;
 }
 
 .footer .icons a:hover {
