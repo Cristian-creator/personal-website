@@ -5,19 +5,19 @@ import StyledBackCard from './StyledBackCard';
 import VerticallyModal from './VerticallyModal';
 
 export default function Project({ project }) {
-    const { title, used, heroImg, gif, backColor, demo, sourceCode } = project;
+    const { title, used, heroImg, gif, backColor, demo, sourceCode, live } = project;
 
     const [open, setOpen] = useState(false);
 
-    const toggleModal = () => {
-        setOpen(!open);
-    };
+    // const toggleModal = () => {
+    //     setOpen(!open);
+    // };
 
     return (
         <>
         <div className='project-card'>
             <div className="front">
-                <img src={gif} alt="" className="gif"/>
+                { gif && <img src={gif} alt="" className="gif"/> }
                 <Hero image={heroImg}>
                     <h2 className="title"> <span> {title} </span> </h2>
                 </Hero>
@@ -48,7 +48,7 @@ export default function Project({ project }) {
                             </div>
                          </div>
                     </Modal> */}
-                   <VerticallyModal show={open} onHide={() => setOpen(false)} title={title} demo={demo} sourceCode={sourceCode} />
+                   <VerticallyModal show={open} onHide={() => setOpen(false)} title={title} demo={demo} sourceCode={sourceCode} live={live} />
                 </div> 
             </StyledBackCard>
         </div>

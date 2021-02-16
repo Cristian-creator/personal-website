@@ -85,17 +85,18 @@
   color: white;
 }
 
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 900px) {
   .knowledge-container {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
     height: 100vh;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (minmax(220px, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-gap: 5px;
   }
   .knowledge-container .card {
     padding: 20px 15px;
-    margin: 10px;
+    margin: 0 auto;
     height: auto;
     text-align: center;
     -webkit-transition: -webkit-transform 0.3s ease-out, -webkit-box-shadow 0.3s ease-out;
@@ -106,15 +107,15 @@
     width: 210px;
   }
   .knowledge-container .card img {
-    width: 3.5rem;
-    height: 3.5rem;
+    width: 3.3rem;
+    height: 3.3rem;
   }
   .knowledge-container .card h5 {
     padding: 0.5rem 0;
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
   .knowledge-container .card h6 {
-    font-size: 0.8rem;
+    font-size: 0.75rem;
     padding: 0.1rem 0;
   }
   .knowledge-container .card:hover {
@@ -122,6 +123,69 @@
             transform: translateY(0);
     -webkit-box-shadow: 0px 0px 92px -10px rgba(0, 0, 0, 0.75);
             box-shadow: 0px 0px 92px -10px rgba(0, 0, 0, 0.75);
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .knowledge-container {
+    -ms-grid-columns: (minmax(180px, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  }
+  .knowledge-container .card {
+    padding: 18px 10px;
+    height: 230px;
+    width: 170px;
+  }
+  .knowledge-container .card img {
+    width: 3rem;
+    height: 3rem;
+  }
+  .knowledge-container .card h5 {
+    padding: 0.4rem 0;
+    font-size: 0.8rem;
+  }
+  .knowledge-container .card h6 {
+    font-size: 0.65rem;
+    padding: 0.1rem 0;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  .knowledge-container {
+    -ms-grid-columns: (minmax(160px, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  }
+  .knowledge-container .card {
+    padding: 12px 5px;
+    height: 210px;
+    width: 150px;
+  }
+  .knowledge-container .card img {
+    width: 2.6rem;
+    height: 2.6rem;
+  }
+  .knowledge-container .card h5 {
+    padding: 0.4rem 0;
+    font-size: 0.7rem;
+  }
+  .knowledge-container .card h6 {
+    padding: 0.1rem 0;
+    font-size: 0.6rem;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .knowledge-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .knowledge-container .card {
+    margin: 7px 0px;
   }
 }
 /*# sourceMappingURL=Knowledge.css.map */

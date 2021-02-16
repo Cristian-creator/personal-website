@@ -165,3 +165,37 @@
         }
     }
 }
+
+@media screen and (max-width: 480px) {
+    .projects-title {
+        font-size: 1.8rem;
+        margin-bottom: 4rem;
+    }
+    .projects {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        width: 100% !important;
+        .project-card {
+            width: 300px;
+            height: 280px;
+            .front {
+                h6 {
+                    font-size: 0.85rem;
+                }
+                .title {
+                    font-size: 1.5rem;
+                }
+                .krTtuT {
+                    height: 110px;
+                }
+                .gif {
+                    top: 45px;
+                }
+            }
+            .back {
+                .demo {
+                    font-size: 1.6rem;
+                }
+            }
+        }
+    }
+}

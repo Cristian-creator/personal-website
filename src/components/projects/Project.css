@@ -203,4 +203,35 @@
     margin: 250px auto;
   }
 }
+
+@media screen and (max-width: 480px) {
+  .projects-title {
+    font-size: 1.8rem;
+    margin-bottom: 4rem;
+  }
+  .projects {
+    -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    width: 100% !important;
+  }
+  .projects .project-card {
+    width: 300px;
+    height: 280px;
+  }
+  .projects .project-card .front h6 {
+    font-size: 0.85rem;
+  }
+  .projects .project-card .front .title {
+    font-size: 1.5rem;
+  }
+  .projects .project-card .front .krTtuT {
+    height: 110px;
+  }
+  .projects .project-card .front .gif {
+    top: 45px;
+  }
+  .projects .project-card .back .demo {
+    font-size: 1.6rem;
+  }
+}
 /*# sourceMappingURL=Project.css.map */

@@ -47,4 +47,51 @@
   background: #4a148c;
   color: white;
 }
+
+.vert-modal .its-body .info a button.live {
+  margin-top: 0.2rem;
+}
+
+@media screen and (max-width: 1200px) {
+  .vert-modal .its-body .info h1 {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  .vert-modal .its-body .info a button {
+    font-size: 0.8rem;
+  }
+  .vert-modal .its-body .demo img {
+    max-width: 550px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .vert-modal .its-body {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .vert-modal .its-body .info {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .vert-modal .its-body .demo img {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .vert-modal .its-body .info h1 {
+    font-size: 1.2rem;
+  }
+  .vert-modal .its-body .info a button {
+    font-size: 0.7rem;
+  }
+}
 /*# sourceMappingURL=VerticallyModal.css.map */

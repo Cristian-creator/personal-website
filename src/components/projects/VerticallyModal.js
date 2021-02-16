@@ -5,7 +5,7 @@ import { Modal, Button } from 'react-bootstrap';
 import './VerticallyModal.css';
 
 export default function VerticallyModal(props) {
-    const { demo, sourceCode, title } = props;
+    const { demo, sourceCode, title, live } = props;
     return (
         <Modal
         {...props}
@@ -26,7 +26,9 @@ export default function VerticallyModal(props) {
             </div>
             <div className="info">
                 <h1> { title } </h1>
-                <a href={sourceCode}><button> Source Code </button> </a>
+                <a href={sourceCode} rel="noopener noreferrer" target="_blank" ><button> Source Code </button> </a>
+                { live && <a href={live} rel="noopener noreferrer" target="_blank" ><button class="live"> Live </button> </a> }
+              {/* onClick={`window.open("${live}");return false;`} */}
             </div>
         </Modal.Body>
         <Modal.Footer>

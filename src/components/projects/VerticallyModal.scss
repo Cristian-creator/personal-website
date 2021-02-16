@@ -29,8 +29,55 @@
                         background: #4a148c;
                         color: white;
                     }
+                    &.live {
+                        margin-top: 0.2rem;
+                    }
                 }
             }
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .vert-modal .its-body {
+        .info {
+            h1 {
+                text-align: center;
+                font-size: 1.5rem;
+            }
+            a button {
+                font-size: 0.8rem;
+            }
+        }
+        .demo img {
+            max-width: 550px;
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .vert-modal .its-body {
+        flex-direction: column-reverse;
+        align-items: center;
+        .info {
+            margin-bottom: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .vert-modal .its-body .demo img {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .vert-modal .its-body .info {
+        h1 {
+            font-size: 1.2rem;
+        }
+        a button {
+            font-size: 0.7rem;
         }
     }
 }
