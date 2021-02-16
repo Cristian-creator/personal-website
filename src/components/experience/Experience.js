@@ -16,10 +16,9 @@ export default function Experience() {
             <div className="experience-flex">
                 <section className="experience-description">
                     <h3> motivated to produce results </h3>
-                    <p> As a tenacious self-taught programmer, I use continous iteration to produce results quickly and continuously improve products.  </p>
-                    <h3> an agile collaborator </h3>
-                    {/* contributed to open source projects, worked in teams, */}
-                    <p> Considering my experience, I can provide fast and realiable solutions, I like challenges and always stay attuned to <u> learning new things and share ideas</u>. </p>
+                    <p> As a tenacious self-taught programmer, I use repetitive iteration to produce results quickly and continuously improve products.  </p>
+                    <h3> a good collaborator </h3>
+                    <p> Considering my experience, I can provide fast and realiable solutions, I like challenges and always stay attuned to learning new things and share ideas. </p>
                 </section>
                 <section className="icons">
                     <img src={jsIcon} alt='javascript'  />

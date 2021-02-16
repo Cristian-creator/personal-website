@@ -19,6 +19,12 @@ const HeroContainer = styled.header`
         border-bottom: 22px solid white;
         border-left: 320px solid transparent;
     }
+
+    @media screen and (max-width: 480px) {
+        &::after {
+            border-left: 300px solid transparent !important;
+        }
+    }
 `;
 
 // const Gif = styled.image`
