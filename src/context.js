@@ -49,7 +49,7 @@ class ContextProvider extends Component {
                     heroImg: networkingImg,
                     gif: networkingGif,
                     title: 'Developers Networking',
-                    used: ['React', 'Socket.IO', 'CSS | SASS', 'NodeJS | Express', 'MongoDB', 'JSON Web Tokens'],
+                    used: ['React', 'Socket.IO', 'CSS | SCSS', 'NodeJS | Express', 'MongoDB', 'JSON Web Tokens'],
                     // backColor: 'linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(58,0,0,1) 0%, rgba(21,22,22,1) 0%, rgba(108,13,46,1) 0%, rgba(37,104,255,1) 0%, rgba(7,8,46,1) 100%, rgba(46,23,149,0.24693627450980393) 100%, rgba(247,2,237,1) 100%, rgba(0,212,255,1) 100%)'
                     backColor: 'linear-gradient(143deg, rgba(2,0,36,1) 0%, rgba(167,19,207,1) 0%, rgba(21,22,22,1) 0%, rgba(108,13,46,1) 0%, rgba(2,131,255,1) 0%, rgba(121,0,116,1) 0%, rgba(56,16,49,1) 100%, rgba(255,255,0,1) 100%, rgba(162,117,18,1) 100%)',
                     live: ''
@@ -73,7 +73,7 @@ class ContextProvider extends Component {
                     heroImg: schoolResponsive,
                     gif: '',
                     title: 'Responsive website',
-                    used: ['HTML', 'SASS', 'Javascript', 'Webpack'],
+                    used: ['HTML', 'SCSS', 'Javascript', 'Webpack'],
                     backColor: 'linear-gradient(143deg, rgba(2,0,36,1) 0%, rgba(167,19,207,1) 0%, rgba(21,22,22,1) 0%, rgba(108,13,46,1) 0%, rgba(2,131,255,1) 0%, rgba(121,0,116,1) 0%, rgba(56,16,49,1) 100%, rgba(255,255,0,1) 100%, rgba(162,117,18,1) 100%)',
                     live: 'https://dreamy-minsky-330978.netlify.app/'
                     
@@ -99,7 +99,7 @@ class ContextProvider extends Component {
                     heroImg: newsImg,
                     gif: newsGif,
                     title: 'News Tracking App',
-                    used: ['Puppeteer', 'React | Redux', 'SASS | Bootstrap', 'NodeJS | Express', 'PostgreSQL', 'JSON Web Tokens'],
+                    used: ['Puppeteer', 'React | Redux', 'SCSS | Bootstrap', 'NodeJS | Express', 'PostgreSQL', 'JSON Web Tokens'],
                     // backColor: 'linear-gradient(309deg, rgba(2,0,36,1) 0%, rgba(58,0,0,1) 0%, rgba(21,22,22,1) 0%, rgba(108,13,46,1) 0%, rgba(2,131,255,1) 0%, rgba(255,255,0,1) 100%, rgba(162,117,18,1) 100%, rgba(46,23,149,0.24693627450980393) 100%, rgba(247,2,237,1) 100%)'
                     backColor: 'linear-gradient(143deg, rgba(2,0,36,1) 0%, rgba(167,19,207,1) 0%, rgba(21,22,22,1) 0%, rgba(108,13,46,1) 0%, rgba(2,131,255,1) 0%, rgba(121,0,116,1) 0%, rgba(56,16,49,1) 100%, rgba(255,255,0,1) 100%, rgba(162,117,18,1) 100%)',
                     live: ''
@@ -124,7 +124,7 @@ class ContextProvider extends Component {
                     heroImg: schoolResponsive2,
                     gif: '',
                     title: 'Responsive website',
-                    used: ['HTML', 'SASS', 'Javascript', 'jQuery'],
+                    used: ['HTML', 'SCSS', 'Javascript', 'jQuery'],
                     backColor: 'linear-gradient(143deg, rgba(2,0,36,1) 0%, rgba(167,19,207,1) 0%, rgba(21,22,22,1) 0%, rgba(108,13,46,1) 0%, rgba(2,131,255,1) 0%, rgba(121,0,116,1) 0%, rgba(56,16,49,1) 100%, rgba(255,255,0,1) 100%, rgba(162,117,18,1) 100%)',
                     live: 'https://peaceful-wescoff-218f90.netlify.app/'
                 },
@@ -135,7 +135,7 @@ class ContextProvider extends Component {
                     heroImg: lyricsImg,
                     gif: lyricsGif,
                     title: 'Lyrics Finder',
-                    used: ['React | Redux', 'CSS | SASS', 'Lyrics.ovh API','Unsplash API'],
+                    used: ['React | Redux', 'CSS | SCSS', 'Lyrics.ovh API','Unsplash API'],
                     backColor: 'linear-gradient(143deg, rgba(2,0,36,1) 0%, rgba(167,19,207,1) 0%, rgba(21,22,22,1) 0%, rgba(108,13,46,1) 0%, rgba(2,131,255,1) 0%, rgba(121,0,116,1) 0%, rgba(56,16,49,1) 100%, rgba(255,255,0,1) 100%, rgba(162,117,18,1) 100%)',
                     live: 'https://silly-jones-36f97e.netlify.app/'
 
