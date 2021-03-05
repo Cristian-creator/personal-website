@@ -11,7 +11,7 @@ export default function Projects() {
             <h1 className="projects-title"> projects portofolio </h1>
             <div className="projects">
                 {
-                    projects.map(project => <Project project={project} />)
+                    projects.map(project => <Project key={project.index} project={project} />)
                 }
             </div>
         </>
