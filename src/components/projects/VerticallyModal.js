@@ -22,7 +22,7 @@ export default function VerticallyModal(props) {
         </Modal.Header>
         <Modal.Body className="its-body">
             <div className="demo">
-                <img src={demo} alt="" srcset=""/>
+                <img src={demo} alt="" srcSet=""/>
             </div>
             <div className="info">
                 <h1> { title } </h1>
