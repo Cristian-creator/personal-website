@@ -4,8 +4,8 @@ import './Project.css'
 import { Context } from '../../context'
 
 export default function Projects() {
-    const {projects} = React.useContext(Context);
-    // console.log(projects.projects);
+    const { projects } = React.useContext(Context);
+
     return (
        <>
             <h1 className="projects-title"> projects portofolio </h1>

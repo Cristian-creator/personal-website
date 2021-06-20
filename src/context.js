@@ -128,18 +128,18 @@ class ContextProvider extends Component {
                     backColor: 'linear-gradient(143deg, rgba(2,0,36,1) 0%, rgba(167,19,207,1) 0%, rgba(21,22,22,1) 0%, rgba(108,13,46,1) 0%, rgba(2,131,255,1) 0%, rgba(121,0,116,1) 0%, rgba(56,16,49,1) 100%, rgba(255,255,0,1) 100%, rgba(162,117,18,1) 100%)',
                     live: 'https://peaceful-wescoff-218f90.netlify.app/'
                 },
-                {
-                    index: 8,
-                    demo: lyricsDemo,
-                    sourceCode: 'https://github.com/Cristian-creator/lyrics-finder',
-                    heroImg: lyricsImg,
-                    gif: lyricsGif,
-                    title: 'Lyrics Finder',
-                    used: ['React | Redux', 'CSS | SCSS', 'Lyrics.ovh API','Unsplash API'],
-                    backColor: 'linear-gradient(143deg, rgba(2,0,36,1) 0%, rgba(167,19,207,1) 0%, rgba(21,22,22,1) 0%, rgba(108,13,46,1) 0%, rgba(2,131,255,1) 0%, rgba(121,0,116,1) 0%, rgba(56,16,49,1) 100%, rgba(255,255,0,1) 100%, rgba(162,117,18,1) 100%)',
-                    live: 'https://silly-jones-36f97e.netlify.app/'
+                // {
+                //     index: 8,
+                //     demo: lyricsDemo,
+                //     sourceCode: 'https://github.com/Cristian-creator/lyrics-finder',
+                //     heroImg: lyricsImg,
+                //     gif: lyricsGif,
+                //     title: 'Lyrics Finder',
+                //     used: ['React | Redux', 'CSS | SCSS', 'Lyrics.ovh API','Unsplash API'],
+                //     backColor: 'linear-gradient(143deg, rgba(2,0,36,1) 0%, rgba(167,19,207,1) 0%, rgba(21,22,22,1) 0%, rgba(108,13,46,1) 0%, rgba(2,131,255,1) 0%, rgba(121,0,116,1) 0%, rgba(56,16,49,1) 100%, rgba(255,255,0,1) 100%, rgba(162,117,18,1) 100%)',
+                //     live: 'https://silly-jones-36f97e.netlify.app/'
 
-                }
+                // }
             ]
         }
     }
