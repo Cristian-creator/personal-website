@@ -8,7 +8,7 @@ import Footer from './components/footer/Footer';
 import { Context } from './context';
 
 function App() {
-  const { projects } = React.useContext(Context);
+  const { projects: projects } = React.useContext(Context);
 
   useEffect(() => {
     // preloade images
