@@ -1,4 +1,4 @@
-## Available Scripts
+## 
 Personal website made using:
 - Javascript
 - React
