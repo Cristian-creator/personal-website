@@ -1,6 +1,6 @@
-##Personal responsive website made using:
+## Personal responsive website made using:
 
-Javascript
-React
-SCSS
-Material UI
+-Javascript
+-React
+-SCSS
+-Material UI
