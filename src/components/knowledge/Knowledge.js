@@ -11,7 +11,8 @@ export default function Knowledge() {
         { 
             title: 'front end',
             icon: frontEnd,
-            technologies: ['HTML5','CSS3 | SASS', 'Material UI', 'JavaScript | Typescript', 'React | Context API | Redux' ]
+            // technologies: ['HTML5','CSS3 | SASS', 'Material UI', 'JavaScript | Typescript', 'React | Context API | Redux' ]
+            technologies: ['Javascript | Typescript', 'CSS | SCSS', 'Material UI', 'ReactJS | NextJS', 'Context API | Redux']
         },
         {
             title: 'server',

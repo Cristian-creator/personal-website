@@ -8,7 +8,7 @@ export default function Projects() {
 
     return (
        <>
-            <h1 className="projects-title"> projects portofolio </h1>
+            <h1 className="projects-title"> projects portfolio </h1>
             <div className="projects">
                 {
                     projects.map(project => <Project key={project.index} project={project} />)

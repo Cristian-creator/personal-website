@@ -17,11 +17,7 @@ import newsImg from './img/news.jpeg';
 import newsGif from './img/news.gif';
 
 import schoolResponsive from './img/school-responsive.jpeg';
-import schoolResponsive2 from './img/school-responsive2.jpeg';
-
-import lyricsImg from './img/lyrics.jpeg';
-import lyricsGif from './img/lyrics-gif.gif';
-
+// import schoolResponsive2 from './img/school-responsive2.jpeg';
 
 // demos
 import networkingDemo from './img/demo/demo-networking.png';
@@ -30,8 +26,7 @@ import expenseTrackerDemo from './img/demo/demo-expense-tracker.png';
 import beachDemo from './img/demo/demo-beach.png';
 import newsDemo from './img/demo/demo-news-2.png';
 import firstResponsive from './img/demo/demo-first.png';
-import secondResponsive from './img/demo/demo-second.png';
-import lyricsDemo from './img/demo/demo-lyrics.png';
+// import secondResponsive from './img/demo/demo-second.png';
 
 
 const Context = React.createContext();
@@ -117,17 +112,17 @@ class ContextProvider extends Component {
                     backColor: 'linear-gradient(143deg, rgba(2,0,36,1) 0%, rgba(167,19,207,1) 0%, rgba(21,22,22,1) 0%, rgba(108,13,46,1) 0%, rgba(2,131,255,1) 0%, rgba(121,0,116,1) 0%, rgba(56,16,49,1) 100%, rgba(255,255,0,1) 100%, rgba(162,117,18,1) 100%)',
                     live: ''
                 },
-                {
-                    index: 7,
-                    demo: secondResponsive,
-                    sourceCode: 'https://github.com/Cristian-creator/lkskmdsd',
-                    heroImg: schoolResponsive2,
-                    gif: '',
-                    title: 'Responsive website',
-                    used: ['HTML', 'SCSS', 'Javascript', 'jQuery'],
-                    backColor: 'linear-gradient(143deg, rgba(2,0,36,1) 0%, rgba(167,19,207,1) 0%, rgba(21,22,22,1) 0%, rgba(108,13,46,1) 0%, rgba(2,131,255,1) 0%, rgba(121,0,116,1) 0%, rgba(56,16,49,1) 100%, rgba(255,255,0,1) 100%, rgba(162,117,18,1) 100%)',
-                    live: 'https://peaceful-wescoff-218f90.netlify.app/'
-                },
+                // {
+                //     index: 7,
+                //     demo: secondResponsive,
+                //     sourceCode: 'https://github.com/Cristian-creator/lkskmdsd',
+                //     heroImg: schoolResponsive2,
+                //     gif: '',
+                //     title: 'Responsive website',
+                //     used: ['HTML', 'SCSS', 'Javascript', 'jQuery'],
+                //     backColor: 'linear-gradient(143deg, rgba(2,0,36,1) 0%, rgba(167,19,207,1) 0%, rgba(21,22,22,1) 0%, rgba(108,13,46,1) 0%, rgba(2,131,255,1) 0%, rgba(121,0,116,1) 0%, rgba(56,16,49,1) 100%, rgba(255,255,0,1) 100%, rgba(162,117,18,1) 100%)',
+                //     live: 'https://peaceful-wescoff-218f90.netlify.app/'
+                // },
                 // {
                 //     index: 8,
                 //     demo: lyricsDemo,

@@ -2,16 +2,12 @@ import React, { useState } from 'react'
 import Hero from './Hero';
 import './Project.css'
 import StyledBackCard from './StyledBackCard';
-import VerticallyModal from './VerticallyModal';
+import TransitionsModal from './TransitionsModal';
 
 export default function Project({ project }) {
     const { title, used, heroImg, gif, backColor, demo, sourceCode, live } = project;
 
     const [open, setOpen] = useState(false);
-
-    // const toggleModal = () => {
-    //     setOpen(!open);
-    // };
 
     return (
         <>
@@ -30,25 +26,7 @@ export default function Project({ project }) {
             <StyledBackCard backColor={backColor} className="back">
                 <div className="back-content">
                     <button className="demo" onClick={() => setOpen(true)}> Demo </button>
-                    {/* <Modal
-                     isOpen={open} 
-                     onRequestClose={toggleModal}
-                     shouldCloseOnOverlayClick={true}
-                     style={ customStyles }
-                    //  overlayClassName="overlay"
-                     >
-                         <div className="modal">
-                            <button onClick={toggleModal} className="close-modal" > close </button>
-                            <div className="demo-img">
-                                <img src={demo} alt="" />
-                            </div>
-                            <div className="demo-utils">
-                                <h3> {title} </h3>
-                                <a href={sourceCode}><button> Source Code </button> </a>
-                            </div>
-                         </div>
-                    </Modal> */}
-                   <VerticallyModal show={open} onHide={() => setOpen(false)} title={title} demo={demo} sourceCode={sourceCode} live={live} />
+                    <TransitionsModal show={open} onHide={() => setOpen(false)} title={title} demo={demo} sourceCode={sourceCode} live={live} />
                 </div> 
             </StyledBackCard>
         </div>

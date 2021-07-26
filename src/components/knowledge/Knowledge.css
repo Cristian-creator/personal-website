@@ -68,7 +68,7 @@
   position: absolute;
   bottom: 0px;
   right: 0px;
-  border-bottom: 140px solid #F8F8FF;
+  border-bottom: 140px solid white;
   border-left: 90vw solid transparent;
   color: white;
 }
@@ -80,7 +80,7 @@
   position: absolute;
   top: 0px;
   left: 0px;
-  border-top: 140px solid #F8F8FF;
+  border-top: 140px solid white;
   border-right: 90vw solid transparent;
   color: white;
 }
