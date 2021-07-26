@@ -6,6 +6,7 @@ import Knowledge from './components/knowledge/Knowledge';
 import Projects from './components/projects/Projects';
 import Footer from './components/footer/Footer';
 import { Context } from './context';
+import { FooterSpace } from './components/footer/FooterSpace';
 
 function App() {
   const { projects } = React.useContext(Context);
@@ -25,6 +26,7 @@ function App() {
         <Knowledge />
         <Projects />
         <Footer />
+        <FooterSpace />
     </div>
   );
 }

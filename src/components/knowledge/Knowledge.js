@@ -17,7 +17,7 @@ export default function Knowledge() {
         {
             title: 'server',
             icon: server,
-            technologies: ['NodeJS', 'Express']
+            technologies: ['NodeJS', 'Express', 'GraphQL', 'ORM']
         },
         {
             title: 'database',

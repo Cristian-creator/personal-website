@@ -9,7 +9,8 @@
     word-spacing: 0.8rem;
 }
 .projects {
-    width: 65%;
+    // width: 65%;
+    width: 70%;
     margin: 0 auto 100px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -166,36 +167,99 @@
     }
 }
 
-@media screen and (max-width: 480px) {
-    .projects-title {
-        font-size: 1.8rem;
-        margin-bottom: 4rem;
+@media screen and (max-width: 1125px) {
+    .projects {
+        column-gap: 4rem;
+        row-gap: 4rem;
+    }
+}
+
+@media screen and (max-width: 1010px) {
+    .projects {
+        column-gap: 1rem;
+        grid-row-gap: 3rem;
     }
     .projects {
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        width: 100% !important;
-        .project-card {
-            width: 300px;
-            height: 280px;
-            .front {
-                h6 {
-                    font-size: 0.85rem;
-                }
-                .title {
-                    font-size: 1.5rem;
-                }
-                .krTtuT {
-                    height: 110px;
-                }
-                .gif {
-                    top: 45px;
-                }
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+    .projects .project-card {
+        width: 280px;
+        height: 260px;
+        .front {
+            .gif {
+                height: 45px;
+                width: 45px;
+                top: 40px;
             }
-            .back {
-                .demo {
+            header {
+                height: 5.55rem;
+                .title {
                     font-size: 1.6rem;
                 }
+                &::after {
+                    border-left-width: 280px;
+                }
+            }
+            h6 {
+                font-size: 1rem;
             }
         }
     }
+}
+
+@media screen and (max-width: 950px) {
+    .projects {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 835px) {
+    .projects-title {
+        margin-bottom: 5rem;
+        font-size: 2rem;
+    }
+    .projects .project-card .back .demo {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .front header::after {
+        border-left-width: 280px !important;
+    }
+    .projects-title {
+        font-size: 1.8rem;
+        margin-bottom: 3.5rem;
+    }
+    .projects {
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        width: 100% !important;
+    }
+    .projects .project-card {
+        width: 260px;
+        height: 240px;
+        .front {
+            .gif {
+                height: 35px;
+                width: 35px;
+                top: 40px;
+            }
+            header {
+                height: 5.2rem;
+                .title {
+                    font-size: 1.4rem;
+                }
+                &::after {
+                    border-left-width: 260px !important;
+                }
+            }
+            h6 {
+                margin-bottom: 5px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 476px) {
+    
 }

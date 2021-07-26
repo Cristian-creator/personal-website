@@ -14,7 +14,7 @@
           justify-content: center;
   height: 500px;
   width: 90%;
-  margin: 0 auto 1rem;
+  margin: 0 auto;
   position: relative;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url("../../img/footer.jpeg");
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../../img/footer.jpeg");
@@ -47,7 +47,7 @@
   width: 60px;
   border-bottom: 3px solid rgba(255, 255, 255, 0.6);
   border-radius: 10px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .footer .icons a {
@@ -60,6 +60,11 @@
   color: #970997;
 }
 
+.footer > p {
+  color: rgba(255, 255, 255, 0.7);
+  margin: 0px;
+}
+
 @media screen and (max-width: 900px) {
   .footer h1 {
     font-size: 2rem;
@@ -70,5 +75,10 @@
   .footer .icons a {
     font-size: 2.5rem;
   }
+}
+
+.footer-space {
+  height: 2rem;
+  width: 100%;
 }
 /*# sourceMappingURL=Footer.css.map */

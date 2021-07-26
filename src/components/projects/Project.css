@@ -10,7 +10,7 @@
 }
 
 .projects {
-  width: 65%;
+  width: 70%;
   margin: 0 auto 100px;
   display: -ms-grid;
   display: grid;
@@ -204,34 +204,96 @@
   }
 }
 
-@media screen and (max-width: 480px) {
-  .projects-title {
-    font-size: 1.8rem;
-    margin-bottom: 4rem;
+@media screen and (max-width: 1125px) {
+  .projects {
+    -webkit-column-gap: 4rem;
+            column-gap: 4rem;
+    row-gap: 4rem;
+  }
+}
+
+@media screen and (max-width: 1010px) {
+  .projects {
+    -webkit-column-gap: 1rem;
+            column-gap: 1rem;
+    grid-row-gap: 3rem;
   }
   .projects {
-    -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    -ms-grid-columns: (minmax(280px, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+  .projects .project-card {
+    width: 280px;
+    height: 260px;
+  }
+  .projects .project-card .front .gif {
+    height: 45px;
+    width: 45px;
+    top: 40px;
+  }
+  .projects .project-card .front header {
+    height: 5.55rem;
+  }
+  .projects .project-card .front header .title {
+    font-size: 1.6rem;
+  }
+  .projects .project-card .front header::after {
+    border-left-width: 280px;
+  }
+  .projects .project-card .front h6 {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .projects {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 835px) {
+  .projects-title {
+    margin-bottom: 5rem;
+    font-size: 2rem;
+  }
+  .projects .project-card .back .demo {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .front header::after {
+    border-left-width: 280px !important;
+  }
+  .projects-title {
+    font-size: 1.8rem;
+    margin-bottom: 3.5rem;
+  }
+  .projects {
+    -ms-grid-columns: (minmax(260px, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     width: 100% !important;
   }
   .projects .project-card {
-    width: 300px;
-    height: 280px;
-  }
-  .projects .project-card .front h6 {
-    font-size: 0.85rem;
-  }
-  .projects .project-card .front .title {
-    font-size: 1.5rem;
-  }
-  .projects .project-card .front .krTtuT {
-    height: 110px;
+    width: 260px;
+    height: 240px;
   }
   .projects .project-card .front .gif {
-    top: 45px;
+    height: 35px;
+    width: 35px;
+    top: 40px;
   }
-  .projects .project-card .back .demo {
-    font-size: 1.6rem;
+  .projects .project-card .front header {
+    height: 5.2rem;
+  }
+  .projects .project-card .front header .title {
+    font-size: 1.4rem;
+  }
+  .projects .project-card .front header::after {
+    border-left-width: 260px !important;
+  }
+  .projects .project-card .front h6 {
+    margin-bottom: 5px;
   }
 }
 /*# sourceMappingURL=Project.css.map */
