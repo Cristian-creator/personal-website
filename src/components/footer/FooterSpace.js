@@ -1,6 +1,8 @@
 import React from 'react'
 import './Footer.css'
 
-export const FooterSpace = () => (
+const FooterSpace = () => (
     <div className="footer-space"></div>
 );
+
+export default FooterSpace;

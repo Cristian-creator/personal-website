@@ -68,6 +68,9 @@ const useStyles = makeStyles((theme) => ({
         alignItems: 'center',
         justifyContent: 'center',
         textAlign: 'center',
+        '& a': {
+            textDecoration: 'none',
+        }
     },
     title: {
         textAlign: "center",
@@ -80,13 +83,15 @@ const useStyles = makeStyles((theme) => ({
     },
     button: {
         margin: "10px 0px",
+        background: 'linear-gradient(143deg, rgba(2,0,36,1) 0%, rgba(167,19,207,1) 0%, rgba(21,22,22,1) 0%, rgba(108,13,46,1) 0%, rgba(2,131,255,1) 0%, rgba(121,0,116,1) 0%, rgba(56,16,49,1) 100%, rgba(255,255,0,1) 100%, rgba(162,117,18,1) 100%)',
+        textTransform: 'none',
+        outline: 'none',
         [theme.breakpoints.down("md")]: {
             width: "100px",
             fontSize: "0.6rem",
             margin: "3px 0px",
         },
     }
-
 }));
 
 export default function TransitionsModal({ show, onHide, title, demo, sourceCode, live }) {
@@ -112,7 +117,7 @@ export default function TransitionsModal({ show, onHide, title, demo, sourceCode
                 </div>
                 <div className={classes.info}>
                     <h1 className={classes.title}> { title } </h1>
-                    <a href={sourceCode} rel="noopener noreferrer" target="_blank"> <Button variant="contained" color="primary" className={classes.button} > Source Code </Button> </a>
+                    <a href={sourceCode} rel="noopener noreferrer" target="_blank"> <Button variant="contained" color="primary" className={classes.button}  > Source Code </Button> </a>
                     { live && <a href={live} rel="noopener noreferrer" target="_blank" > <Button variant="contained" color="primary" className={classes.button} > Live </Button> </a> }
                 </div>
             </div>

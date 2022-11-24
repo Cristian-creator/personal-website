@@ -6,17 +6,18 @@ import Knowledge from './components/knowledge/Knowledge';
 import Projects from './components/projects/Projects';
 import Footer from './components/footer/Footer';
 import { Context } from './context';
-import { FooterSpace } from './components/footer/FooterSpace';
+import FooterSpace from './components/footer/FooterSpace';
+import Companies from './components/Companies/Companies';
 
 function App() {
   const { projects } = React.useContext(Context);
 
   useEffect(() => {
-    // preloade images
+    // preload images
     projects.forEach((project) => {
       const img = new Image();
       img.src = project.demo;
-    })
+    });
   }, [projects]);
 
   return (
@@ -24,6 +25,7 @@ function App() {
         <Header />
         <Experience />
         <Knowledge />
+        <Companies />
         <Projects />
         <Footer />
         <FooterSpace />

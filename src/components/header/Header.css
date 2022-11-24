@@ -16,12 +16,13 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url("../../img/header.webp");
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../../img/header.webp");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url("../../img/heroes/header.webp");
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../../img/heroes/header.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 2px;
+  font-family: 'Roboto', sans-serif;
   color: rgba(255, 255, 255, 0.95);
   letter-spacing: 0.6px;
 }

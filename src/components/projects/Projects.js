@@ -3,7 +3,7 @@ import Project from './Project'
 import './Project.css'
 import { Context } from '../../context'
 
-export default function Projects() {
+const Projects = () => {
     const { projects } = React.useContext(Context);
 
     return (
@@ -11,9 +11,11 @@ export default function Projects() {
             <h1 className="projects-title"> projects portfolio </h1>
             <div className="projects">
                 {
-                    projects.map(project => <Project key={project.index} project={project} />)
+                    projects.map(project => <Project key={project.title} project={project} />)
                 }
             </div>
         </>
     )
 }
+
+export default Projects;

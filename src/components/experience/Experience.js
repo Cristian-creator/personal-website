@@ -1,12 +1,11 @@
 import React from 'react'
-import jsIcon from '../../img/icons8-javascript-48.png';
-import nodeIcon from '../../img/nodejs.png';
-import react from '../../img/react.png';
+import jsIcon from '../../img/experience/js.png';
+import nodeIcon from '../../img/experience/nodejs.png';
+import react from '../../img/experience/react.png';
 
 import './Experience.css';
 
-
-export default function Experience() {
+const Experience = () => {
     return (
         <div className="experience-container"> 
             <section className="title">
@@ -30,3 +29,5 @@ export default function Experience() {
         </div>
     )
 }
+
+export default Experience;

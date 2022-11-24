@@ -51,20 +51,10 @@
   margin-bottom: 1.8rem;
 }
 
-.experience-container .experience-flex .icons img {
-  width: 140px;
-  height: 140px;
-  padding: 5px;
+.experience-container .experience-flex .icons > img {
+  max-width: 120px;
+  height: auto;
   margin: 0 1.8rem;
-  -webkit-transition: all 0.2s ease-out;
-  transition: all 0.2s ease-out;
-}
-
-.experience-container .experience-flex .icons img:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-  -webkit-box-shadow: 1px 1px 2px #750f6b, 0 0 25px #750f6b, 0 0 5px #750f6b;
-          box-shadow: 1px 1px 2px #750f6b, 0 0 25px #750f6b, 0 0 5px #750f6b;
 }
 
 @media screen and (max-width: 1650px) {
@@ -90,8 +80,8 @@
     width: 85%;
   }
   .icons img {
-    width: 110px !important;
-    height: 110px !important;
+    max-width: 110px;
+    height: auto;
     margin: 0px 1.5rem;
   }
 }
@@ -102,6 +92,9 @@
     -webkit-box-direction: normal !important;
         -ms-flex-direction: column !important;
             flex-direction: column !important;
+  }
+  .icons {
+    max-width: 500px;
   }
   .icons img {
     margin: 0 1.2rem !important;
@@ -116,8 +109,9 @@
 
 @media screen and (max-width: 678px) {
   .experience-container .experience-flex .icons img {
-    width: 80px !important;
-    height: 80px !important;
+    max-width: 80px;
+    height: auto;
+    margin: 0 1rem;
   }
   .experience-container .title h1 {
     font-size: 1.55rem;
@@ -147,8 +141,15 @@
     font-size: 0.75rem;
   }
   .experience-container .experience-flex .icons img {
-    width: 60px !important;
-    height: 60px !important;
+    max-width: 60px;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .experience-container .experience-flex .icons img {
+    max-width: 40px;
+    height: auto;
   }
 }
 /*# sourceMappingURL=Experience.css.map */

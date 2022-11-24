@@ -1,0 +1,21 @@
+.companies h1 {
+    margin-bottom: 3rem;
+}
+
+.companies-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+
+    img {
+        max-width: 200px;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .companies-section img {
+        margin: 10px;
+        max-width: 120px;
+    }
+}

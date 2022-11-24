@@ -10,15 +10,13 @@
     justify-content: center;
     align-items: center;
 
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../../img/header.webp');
-    // background-color: rgba(0, 0, 0, 0.9);
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../../img/heroes/header.webp');
     background-position: center;
     background-repeat:no-repeat ;
     background-size: cover;
     border-radius: 2px;
 
-    // font-family: 'Roboto', sans-serif;
-    // color: #F8F8FF;
+    font-family: 'Roboto', sans-serif;
     color: rgba(255, 255, 255, 0.95);
     letter-spacing: 0.6px;
 
@@ -26,7 +24,6 @@
         text-align: center;
         font-size: 4.5rem;
         text-transform: capitalize;
-        // word-spacing: 0.7rem;
         text-shadow:
             -1px -1px 0 #000,  
             1px -1px 0 #000,

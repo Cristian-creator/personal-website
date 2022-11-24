@@ -1,23 +1,22 @@
 import React from 'react'
 import './Knowledge.css'
 
-import frontEnd from '../../img/window.png';
-import server from '../../img/server.png';
-import database from '../../img/database.png';
+import frontEnd from '../../img/knowledge/window.png';
+import server from '../../img/knowledge/server.png';
+import database from '../../img/knowledge/database.png';
 
-export default function Knowledge() {
+const Knowledge = () => {
 
     const knowledgeList = [
         { 
             title: 'front end',
             icon: frontEnd,
-            // technologies: ['HTML5','CSS3 | SASS', 'Material UI', 'JavaScript | Typescript', 'React | Context API | Redux' ]
-            technologies: ['Javascript | Typescript', 'CSS | SCSS', 'Material UI', 'ReactJS | NextJS', 'Context API | Redux']
+            technologies: ['Javascript | Typescript', 'CSS |  Material UI', 'Jest', 'ReactJS | NextJS', 'Context API | Redux']
         },
         {
             title: 'server',
             icon: server,
-            technologies: ['NodeJS', 'Express', 'GraphQL', 'ORM']
+            technologies: ['Javascript | Typescript', 'NodeJS', 'Express | NestJS', 'Jest', 'GraphQL']
         },
         {
             title: 'database',
@@ -43,3 +42,5 @@ export default function Knowledge() {
         </div>
     )
 }
+
+export default Knowledge;

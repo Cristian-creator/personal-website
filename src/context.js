@@ -1,40 +1,36 @@
 import React, { Component } from 'react'
 
-// img && gif
-import networkingImg from './img/networking.jpg';
-import networkingGif from './img/3F3D.gif';
+import networkingImg from './img/applications/developers-networking/networking.jpg';
+import networkingGif from './img/applications/developers-networking/spinning-like.gif';
+import networkingDemo from './img/applications/developers-networking/demo-networking.png';
 
-import travelImg from './img/travel.jpg';
-import travelGif from './img/travel.gif';
+import travelImg from './img/applications/travel-log/travel.jpg';
+import travelGif from './img/applications/travel-log/travel.gif';
+import travelDemo from './img/applications/travel-log/demo-travel.gif';
 
-import expensesImg from './img/expenses.jpg';
-import expensesGif from './img/expenses.gif';
+import expensesImg from './img/applications/expenses-tracker/expenses.jpg';
+import expensesGif from './img/applications/expenses-tracker/expenses.gif';
+import expenseTrackerDemo from './img/applications/expenses-tracker/demo-expense-tracker.png';
 
-import beachImg from './img/beach.jpeg';
-import beachGif from './img/beach.gif';
+import beachImg from './img/applications/beach-resort/beach.jpeg';
+import beachGif from './img/applications/beach-resort/beach.gif';
+import beachDemo from './img/applications/beach-resort/demo-beach.png';
 
-import newsImg from './img/news.jpeg';
-import newsGif from './img/news.gif';
+import newsImg from './img/applications/news-tracking/news.jpeg';
+import newsGif from './img/applications/news-tracking/news.gif';
+import newsDemo from './img/applications/news-tracking/demo-news-2.png';
 
-import schoolResponsive from './img/school-responsive.jpeg';
+import cartImg from './img/applications/react-ts-cart/cart.jpeg';
+import cartDemo from './img/applications/react-ts-cart/demo-cart.png';
 
-import cartImg from './img/cart.jpeg';
-import redditCloneImg from './img/reddit-clone.jpeg';
-import vandendriescscheImg from './img/vanden.jpeg';
-// import schoolResponsive2 from './img/school-responsive2.jpeg';
+import redditCloneImg from './img/applications/reddit-clone/reddit-clone.jpeg';
+import redditDemo from './img/applications/reddit-clone/demo-reddit-clone.png';
 
-// demos
-import networkingDemo from './img/demo/demo-networking.png';
-import travelDemo from './img/demo/demo-travel.gif';
-import expenseTrackerDemo from './img/demo/demo-expense-tracker.png';
-import beachDemo from './img/demo/demo-beach.png';
-import newsDemo from './img/demo/demo-news-2.png';
-import firstResponsive from './img/demo/demo-first.png';
-import cartDemo from './img/demo/demo-cart.png';
-import redditDemo from './img/demo/demo-reddit-clone.png';
-import vandendriescscheDemo from './img/demo/demo-vanden.png';
-// import secondResponsive from './img/demo/demo-second.png';
+import vandendriescscheImg from './img/applications/vandendriessche/vanden.jpeg';
+import vandendriescscheDemo from './img/applications/vandendriessche/demo-vanden.png';
 
+import clickAppDemo from './img/applications/click-app/click-app-demo.png';
+import clickAppGif from './img/applications/click-app/click-app.gif';
 
 const Context = React.createContext();
 class ContextProvider extends Component {
@@ -45,111 +41,78 @@ class ContextProvider extends Component {
         this.state = {
          projects: [
                 {
-                    index: 1,
-                    demo: networkingDemo,
-                    sourceCode: 'https://github.com/Cristian-creator/social-media-app',
-                    heroImg: networkingImg,
-                    gif: networkingGif,
-                    title: 'Developers Networking',
-                    used: ['React', 'Socket.IO', 'CSS | SCSS', 'NodeJS | Express', 'MongoDB', 'JSON Web Tokens'],
-                    // backColor: 'linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(58,0,0,1) 0%, rgba(21,22,22,1) 0%, rgba(108,13,46,1) 0%, rgba(37,104,255,1) 0%, rgba(7,8,46,1) 100%, rgba(46,23,149,0.24693627450980393) 100%, rgba(247,2,237,1) 100%, rgba(0,212,255,1) 100%)'
-                    backColor: 'linear-gradient(143deg, rgba(2,0,36,1) 0%, rgba(167,19,207,1) 0%, rgba(21,22,22,1) 0%, rgba(108,13,46,1) 0%, rgba(2,131,255,1) 0%, rgba(121,0,116,1) 0%, rgba(56,16,49,1) 100%, rgba(255,255,0,1) 100%, rgba(162,117,18,1) 100%)',
-                    live: ''
+                    demo: clickAppDemo,
+                    heroImg: clickAppDemo,
+                    gif: clickAppGif,
+                    sourceCode: 'https://github.com/Cristian-creator/click-app',
+                    title: 'Click Game',
+                    used: ['Typescript','SCSS', 'React | Redux Toolkit', 'Jest', 'NodeJS | Express', 'MongoDB'],
                 },
                 {
-                    index: 8,
                     demo: redditDemo,
                     heroImg: redditCloneImg,
                     sourceCode: 'https://github.com/Cristian-creator/reddit-clone-nextjs',
                     title: 'Reddit Clone',
                     used: ['Typescript','Material UI', 'NextJS', 'GraphQL | URQL', 'NodeJS | Express', 'PostgreSQL'],
-                    backColor: 'linear-gradient(143deg, rgba(2,0,36,1) 0%, rgba(167,19,207,1) 0%, rgba(21,22,22,1) 0%, rgba(108,13,46,1) 0%, rgba(2,131,255,1) 0%, rgba(121,0,116,1) 0%, rgba(56,16,49,1) 100%, rgba(255,255,0,1) 100%, rgba(162,117,18,1) 100%)',
-                    live: ''
                 },
+
                 {
-                    index: 7,
-                    demo: cartDemo,
-                    heroImg: cartImg,
-                    sourceCode: 'https://github.com/Cristian-creator/shopping-cart-react-ts',
-                    title: 'Shopping Cart',
-                    used: ['Typescript','CSS','Material UI', 'React'],
-                    backColor: 'linear-gradient(143deg, rgba(2,0,36,1) 0%, rgba(167,19,207,1) 0%, rgba(21,22,22,1) 0%, rgba(108,13,46,1) 0%, rgba(2,131,255,1) 0%, rgba(121,0,116,1) 0%, rgba(56,16,49,1) 100%, rgba(255,255,0,1) 100%, rgba(162,117,18,1) 100%)',
-                    live: 'https://cristian-creator.github.io/shopping-cart-react-ts/'
-                },
-                {
-                    index: 9,
-                    demo: vandendriescscheDemo,
-                    heroImg: vandendriescscheImg,
-                    sourceCode: 'https://github.com/Cristian-creator/Vandendriessche',
-                    title: 'Responsive website',
-                    used: ['HTML5','CSS', 'Javascript', 'PHP'],
-                    backColor: 'linear-gradient(143deg, rgba(2,0,36,1) 0%, rgba(167,19,207,1) 0%, rgba(21,22,22,1) 0%, rgba(108,13,46,1) 0%, rgba(2,131,255,1) 0%, rgba(121,0,116,1) 0%, rgba(56,16,49,1) 100%, rgba(255,255,0,1) 100%, rgba(162,117,18,1) 100%)',
-                    live: 'http://anounceovsilver.eu/index.html'
-                },
-                {
-                    index: 2,
-                    demo: travelDemo,
-                    sourceCode: 'https://github.com/Cristian-creator/travel-log',
-                    heroImg: travelImg,
-                    gif: travelGif,
-                    title: 'Travel Log',
-                    used: ['React', 'REACT-MAP-GL','CSS', 'NodeJS | Express', 'MongoDB'],
-                    // backColor: 'linear-gradient(29deg, rgba(2,0,36,1) 0%, rgba(58,0,0,1) 0%, rgba(21,22,22,1) 0%, rgba(108,13,46,1) 0%, rgba(124,82,35,1) 0%, rgba(255,227,3,1) 100%, rgba(162,117,18,1) 100%, rgba(46,23,149,0.24693627450980393) 100%, rgba(247,2,237,1) 100%)'
-                    backColor: 'linear-gradient(143deg, rgba(2,0,36,1) 0%, rgba(167,19,207,1) 0%, rgba(21,22,22,1) 0%, rgba(108,13,46,1) 0%, rgba(2,131,255,1) 0%, rgba(121,0,116,1) 0%, rgba(56,16,49,1) 100%, rgba(255,255,0,1) 100%, rgba(162,117,18,1) 100%)',
-                    live: ''
-                },
-                
-                {
-                    index: 5,
                     demo: newsDemo,
                     sourceCode: 'https://github.com/Cristian-creator/news-tracking-app',
                     heroImg: newsImg,
                     gif: newsGif,
                     title: 'News Tracking App',
                     used: ['Puppeteer', 'React | Redux', 'SCSS | Bootstrap', 'NodeJS | Express', 'PostgreSQL', 'JSON Web Tokens'],
-                    // backColor: 'linear-gradient(309deg, rgba(2,0,36,1) 0%, rgba(58,0,0,1) 0%, rgba(21,22,22,1) 0%, rgba(108,13,46,1) 0%, rgba(2,131,255,1) 0%, rgba(255,255,0,1) 100%, rgba(162,117,18,1) 100%, rgba(46,23,149,0.24693627450980393) 100%, rgba(247,2,237,1) 100%)'
-                    backColor: 'linear-gradient(143deg, rgba(2,0,36,1) 0%, rgba(167,19,207,1) 0%, rgba(21,22,22,1) 0%, rgba(108,13,46,1) 0%, rgba(2,131,255,1) 0%, rgba(121,0,116,1) 0%, rgba(56,16,49,1) 100%, rgba(255,255,0,1) 100%, rgba(162,117,18,1) 100%)',
-                    live: ''
-
-                },                
+                }, 
                 {
-                    index: 6,
+                    demo: travelDemo,
+                    sourceCode: 'https://github.com/Cristian-creator/travel-log',
+                    heroImg: travelImg,
+                    gif: travelGif,
+                    title: 'Travel Log',
+                    used: ['React', 'REACT-MAP-GL','CSS', 'NodeJS | Express', 'MongoDB'],
+                },   
+                {
+                    demo: cartDemo,
+                    heroImg: cartImg,
+                    sourceCode: 'https://github.com/Cristian-creator/shopping-cart-react-ts',
+                    title: 'Shopping Cart',
+                    used: ['Typescript','CSS','Material UI', 'React'],
+                    live: 'https://cristian-creator.github.io/shopping-cart-react-ts/'
+                },     
+                {
                     demo: expenseTrackerDemo,
                     heroImg: expensesImg,
                     sourceCode: 'https://github.com/Cristian-creator/expenses-tracker',
                     gif: expensesGif,
                     title: 'Expenses Tracker',
                     used: ['React | Context API','CSS', 'NodeJS | Express', 'MongoDB'],
-                    // backColor: 'linear-gradient(29deg, rgba(2,0,36,1) 0%, rgba(58,0,0,1) 0%, rgba(21,22,22,1) 0%, rgba(108,13,46,1) 0%, rgba(167,8,8,1) 0%, rgba(251,250,250,1) 100%, rgba(162,117,18,1) 100%, rgba(46,23,149,0.24693627450980393) 100%, rgba(247,2,237,1) 100%)'
-                    backColor: 'linear-gradient(143deg, rgba(2,0,36,1) 0%, rgba(167,19,207,1) 0%, rgba(21,22,22,1) 0%, rgba(108,13,46,1) 0%, rgba(2,131,255,1) 0%, rgba(121,0,116,1) 0%, rgba(56,16,49,1) 100%, rgba(255,255,0,1) 100%, rgba(162,117,18,1) 100%)',
-                    live: ''
                 },
                 {
-                    index: 3,
-                    demo: firstResponsive,
-                    sourceCode: 'https://github.com/Cristian-creator/jdsajds',
-                    heroImg: schoolResponsive,
-                    gif: '',
-                    title: 'Responsive website',
-                    used: ['HTML', 'SCSS', 'Javascript', 'Webpack'],
-                    backColor: 'linear-gradient(143deg, rgba(2,0,36,1) 0%, rgba(167,19,207,1) 0%, rgba(21,22,22,1) 0%, rgba(108,13,46,1) 0%, rgba(2,131,255,1) 0%, rgba(121,0,116,1) 0%, rgba(56,16,49,1) 100%, rgba(255,255,0,1) 100%, rgba(162,117,18,1) 100%)',
-                    live: 'https://dreamy-minsky-330978.netlify.app/'
-                    
+                    demo: networkingDemo,
+                    sourceCode: 'https://github.com/Cristian-creator/social-media-app',
+                    heroImg: networkingImg,
+                    gif: networkingGif,
+                    title: 'Developers Networking',
+                    used: ['React', 'Socket.IO', 'CSS | SCSS', 'NodeJS | Express', 'MongoDB', 'JSON Web Tokens'],
                 },
-                
                 {
-                    index: 4,
                     demo: beachDemo,
                     sourceCode: 'https://github.com/Cristian-creator/beach-resort',
                     heroImg: beachImg,
                     gif: beachGif,
                     title: 'Beach Resort',
                     used: ['React | Context API', 'CSS', 'Styled-Components'],
-                    // backColor: 'linear-gradient(309deg, rgba(2,0,36,1) 0%, rgba(58,0,0,1) 0%, rgba(21,22,22,1) 0%, rgba(108,13,46,1) 0%, rgba(2,131,255,1) 0%, rgba(255,255,0,1) 100%, rgba(162,117,18,1) 100%, rgba(46,23,149,0.24693627450980393) 100%, rgba(247,2,237,1) 100%)'
-                    backColor: 'linear-gradient(143deg, rgba(2,0,36,1) 0%, rgba(167,19,207,1) 0%, rgba(21,22,22,1) 0%, rgba(108,13,46,1) 0%, rgba(2,131,255,1) 0%, rgba(121,0,116,1) 0%, rgba(56,16,49,1) 100%, rgba(255,255,0,1) 100%, rgba(162,117,18,1) 100%)',
                     live: 'https://objective-euclid-7279e2.netlify.app/'
-                    
                 },
+                {
+                    demo: vandendriescscheDemo,
+                    heroImg: vandendriescscheImg,
+                    sourceCode: 'https://github.com/Cristian-creator/Vandendriessche',
+                    title: 'Responsive website',
+                    used: ['HTML5','CSS', 'Javascript', 'PHP'],
+                    live: 'http://anounceovsilver.eu/index.html'
+                },       
             ]
         }
     }
