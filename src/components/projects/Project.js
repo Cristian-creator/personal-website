@@ -13,7 +13,7 @@ export default function Project({ project }) {
         <>
             <div className='project-card'>
                 <div className="front">
-                    { gif && <img src={gif} alt="" className="gif"/> }
+                    { gif && <img src={gif} alt="" className="gif" loading="lazy" /> }
                     <Hero image={heroImg}>
                         <h2 className="title"> <span> {title} </span> </h2>
                     </Hero>

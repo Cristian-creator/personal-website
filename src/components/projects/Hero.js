@@ -27,14 +27,6 @@ const HeroContainer = styled.header`
     }
 `;
 
-// const Gif = styled.image`
-//     background: url(${props => props.image})
-//     // position: absolute;
-//     // bottom: 0;
-//     // right:0;
-//     // width: 30px;
-// `;
-
 export default function Hero({ children, image }) {
     return (
         <HeroContainer image={image}>
